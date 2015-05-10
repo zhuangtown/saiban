@@ -110,6 +110,17 @@ if(!isset($_SESSION["user_id"])){
                     
                     </select>
                     </TD>
+					   <TH class="l-cellsec">Œ</TH>
+                    <TD class="l-cellodd">
+						<select name="oneMonth">
+							<option value="1">1Œ</option>
+							<option value="1">2Œ</option>
+							<option value="1">3Œ</option>
+							<option value="1">4Œ</option>
+							<option value="1">5Œ</option>
+							<option value="1">6Œ</option>
+						</select>
+						<TD>
                 </TR>
                 <TR>
                     <TH class="l-cellsec">æˆøæ</TH>
