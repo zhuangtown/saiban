@@ -92,7 +92,7 @@ if(!isset($_SESSION["user_id"])){
                     </TD>
                 </TR>
             <TR>
-                    <TH class="l-cellsec">”N</TH>
+                    <TH class="l-cellsec">”NŒ</TH>
                     <TD class="l-cellodd"><select name="oneYear">
                     <?php 
                     $Count = 0;
@@ -108,19 +108,23 @@ if(!isset($_SESSION["user_id"])){
                     }
                     ?>
                     
-                    </select>
-                    </TD>
-					   <TH class="l-cellsec">Œ</TH>
-                    <TD class="l-cellodd">
+                    </select>    
 						<select name="oneMonth">
-							<option value="1">1Œ</option>
-							<option value="1">2Œ</option>
-							<option value="1">3Œ</option>
-							<option value="1">4Œ</option>
-							<option value="1">5Œ</option>
-							<option value="1">6Œ</option>
+							<option value="">--</option>
+							<option value="01">1Œ</option>
+							<option value="02">2Œ</option>
+							<option value="03">3Œ</option>
+							<option value="04">4Œ</option>
+							<option value="05">5Œ</option>
+							<option value="06">6Œ</option>
+							<option value="07">7Œ</option>
+							<option value="08">8Œ</option>
+							<option value="09">9Œ</option>
+							<option value="10">10Œ</option>
+							<option value="11">11Œ</option>
+							<option value="12">12Œ</option>
 						</select>
-						<TD>
+						</TD>
                 </TR>
                 <TR>
                     <TH class="l-cellsec">æˆøæ</TH>
@@ -150,8 +154,15 @@ if(!isset($_SESSION["user_id"])){
             </table>
       </form>
       
- <?php  if(isset($_POST['searchOk'])){
- $sql_order="SELECT saibanRes,buildDate,updatetime,user FROM `order` WHERE left(saibanRes,1)='I' AND DATE_FORMAT(buildDate,\"%Y\")='".$_POST['oneYear']."'";
+ <?php 
+//ŒŸ¸ğŒ@sql
+ if(isset($_POST['searchOk'])){
+ $sql_order="SELECT saibanRes,buildDate,updatetime,user FROM `order` WHERE left(saibanRes,1)='I' AND DATE_FORMAT(buildDate,\"%Y";
+ if($_POST['oneMonth']){
+$sql_order .="%m\")='".$_POST['oneYear'].$_POST['oneMonth']."'";
+ }else{
+$sql_order .="\")='".$_POST['oneYear']."'";
+ }
   $res_order=mysql_query($sql_order,$db) or die("DB error!!");
 
 ?>
