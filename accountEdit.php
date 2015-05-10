@@ -338,7 +338,7 @@ document.getElementById("sumpricez").value=sumprice+shz+trance;
 				<TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_time" name="wk_<?php echo $i?>_time" value="" onBlur="time()"  style="background: transparent; border-width: 0px; width: 100%">
                 </TD>
                
-                <TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_addprice" name="wk_<?php echo $i?>_addprice" value=" "   style="background: transparent; border-width: 0px; width: 100%">
+                <TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_addprice" name="wk_<?php echo $i?>_addprice" value=""   style="background: transparent; border-width: 0px; width: 100%">
                 </TD>
                  
                 

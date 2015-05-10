@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
-<title>Untitled Document</title>
+<title>注文書</title>
 </head>
-
 <body>
-<table width="849" border="0">
+<table width="849" border="0" cellspacing="0" >
   <tr>
     <td width="843"><table width="693" border="0">
       <tr>
@@ -14,11 +13,11 @@
         <td width="251"><table width="248" border="1">
       <tr>
         <td width="98" bgcolor="#CCCCCC">発注発行日</td>
-        <td width="134"><font size="2">{$buildDate}</font></td>
+        <td width="134"><font size="2">{##buildDate}</font></td>
       </tr>
       <tr>
         <td bgcolor="#CCCCCC">注文書番号</td>
-        <td><span class="l-cellodd">{$saibanRes}</span></td>
+        <td><span class="l-cellodd">{##saibanRes}</span></td>
       </tr>
       
     </table></td>
@@ -26,7 +25,7 @@
     </table></td>
   </tr>
 </table>
-<table width="848" border="0">
+<table width="848" border="0" cellspacing="0">
   <tr>
     <td width="842">&nbsp;</td>
   </tr>
@@ -37,7 +36,7 @@
   </tr>
   
 </table>
-<table width="845"  border="0" style="margin: 0">
+<table width="845"  cellspacing="0" border="0" style="margin: 0">
   <tr>
     <td width="386" height="133"   >&nbsp; </td>
     <td width="449"><table width="437" height="131"  border="1">
@@ -68,7 +67,7 @@
     </table></td>
   </tr>
 </table>
-<table width="847" border="1" bgcolor="#FFFFFF">
+<table width="847" border="1" cellspacing="0" bgcolor="#FFFFFF">
   <colgroup>
   <col width="20%" />
   <col width="60%" />
@@ -76,36 +75,36 @@
   <tbody>
     <tr>
       <td width="101" bgcolor="#CCCCCC"  ><div align="left"><span class="style1">発注番号</span></div></td>
-      <td width="734"  >{$saibanRes}</td>
+      <td width="734"  >{##saibanRes}</td>
     </tr>
     <tr>
       <td bgcolor="#CCCCCC" ><div align="left" class="style1">作業内容</div></td>
-      <td >{$workContents}</td>
+      <td >{##workContents}</td>
     </tr>
     <tr>
       <td bgcolor="#CCCCCC" ><div align="left">発注期間</div></td>
-      <td >{$periodStart}～{$periodEnd} </td>
+      <td >{##periodStart}～{##periodEnd} </td>
     </tr>
     <tr>
       <td bgcolor="#CCCCCC" class=style1 ><div align="left">支払条件</div></td>
-      <td >{$payCondition} </td>
+      <td >{##payCondition} </td>
     </tr>
     <tr>
       <td bgcolor="#CCCCCC"><div align="left" class="style1">作業場所</div></td>
-      <td>{$workPlace}</td>
+      <td>{##workPlace}</td>
     </tr>
     <tr>
       <td height="19" bgcolor="#CCCCCC"  class=style1><div align="left">作業担当</div></td>
-      <td >{$workCharge}</td>
+      <td >{##workCharge}</td>
     </tr>
   </tbody>
 </table>
-<table width="210" border="0">
+<table width="210" border="0" cellspacing="0" >
   <tr>
     <td>&nbsp;</td>
   </tr>
 </table>
-<TABLE width="850" border="1"  >
+<TABLE width="850" border="1"  cellspacing="0" >
   <COLGROUP>
   <COL width="5%">
   <COL width="35%">
@@ -128,11 +127,11 @@
   <TR>
     <TD align="center">{$id}</TD>
     <TD  align="left">{$stepContents}</TD>
-    <TD  align="center">{$subtracttime}</TD>
-    <TD  align="center">{$addtime}</TD>
-    <TD  align="center">{$time}</TD>
-    <TD  align="right">{$unitprice}</TD>
-    <TD  align="right">{$addprice}</TD>
+    <TD  align="center">{$number}</TD>
+    <TD  align="center">{$unitprice}</TD>
+    <TD  align="center">{$price}</TD>
+    <TD  align="right">{$addunitprice}</TD>
+    <TD  align="right">{$subunitprice}</TD>
 	
 	
    !}
@@ -167,7 +166,7 @@
 </TABLE>
 </div>
 </td>
-<table width="857" border="0">
+<table width="857" border="0" cellspacing="0">
   <tr>
     <td width="581">&nbsp;</td>
     <td width="266"><table  width="231" border="1" align="right">
@@ -191,7 +190,7 @@
   <TABLE >
   <TBODY>
     <TR><TD class=l-cellodd>摘要：</TD></TR>
-    <TR><TD class=l-cellodd>{$explanation}</TD></TR>
+    <TR><TD class=l-cellodd>{##explanation}</TD></TR>
   </TBODY>
 </TABLE>
 </DIV>

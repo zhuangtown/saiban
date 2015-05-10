@@ -1,6 +1,6 @@
 <?php
 //error_reporting(E_ALL^E_NOTICE^E_WARNING);
-//session_start();
+session_start();
 mb_language("Japanese");
 if(!isset($_SESSION["user_id"])){
     header("Location: error.php");

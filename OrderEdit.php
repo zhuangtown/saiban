@@ -239,15 +239,15 @@ document.getElementById("sumpricez").value=sumprice+shz;
                 </TD>
                 <TD class="l-cellodd"><input type="text" name="wk_<?php echo $i?>_stepContents" value="<?php if(isset($_POST['wk_'.$i.'_stepContents'])){echo $_POST['wk_'.$i.'_stepContents'];}?>" style="background: transparent; border-width: 0px; width: 100%">
                 </TD>
-               <TD class="l-cellodd"><input  type="text" id="wk_<?php echo $i?>_Number"  name="wk_<?php echo $i?>_Number" value="" style="background: transparent; border-width: 0px; width: 100%">
+               <TD class="l-cellodd"><input  type="text" id="wk_<?php echo $i?>_Number"  name="wk_<?php echo $i?>_Number" value=" " onBlur="keisan()" style="background: transparent; border-width: 0px; width: 100%">
                 </TD> 
-				<TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_unitprice" name="wk_<?php echo $i?>_unitprice" value="" onBlur="keisan()" style="background: transparent; border-width: 0px; width: 100%">
+				<TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_unitprice" name="wk_<?php echo $i?>_unitprice" value=" " onBlur="keisan()" style="background: transparent; border-width: 0px; width: 100%">
                 </TD>
 				<TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_price" name="wk_<?php echo $i?>_price" value="" style="background: transparent; border-width: 0px; width: 100%">
                 </TD>
-                <TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_addunitPrice" name="wk_<?php echo $i?>_addunitPrice" value=""  style="background: transparent; border-width: 0px; width: 100%">
+                <TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_addunitPrice" name="wk_<?php echo $i?>_addunitPrice" value=" "  style="background: transparent; border-width: 0px; width: 100%">
                 </TD>
-                <TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_subtractunitprice" name="wk_<?php echo $i?>_subtractunitprice" value=""   style="background: transparent; border-width: 0px; width: 100%">
+                <TD class="l-cellodd"><input type="text" id="wk_<?php echo $i?>_subtractunitprice" name="wk_<?php echo $i?>_subtractunitprice" value=" "   style="background: transparent; border-width: 0px; width: 100%">
                 </TD>
                  
             </TR>

@@ -88,7 +88,7 @@ function orderToPdf(){
         $listTpl = substr($orderTemplate, strpos($orderTemplate, "{!") + 2, strpos($orderTemplate, "!}") - strpos($orderTemplate, "{!") - 2);
         while ($row_work = mysql_fetch_array($res_work, MYSQL_ASSOC)) {
                 $listTplTr = $listTpl;
-                $listTplTr = preg_replace('/{\$id}/', i, $listTplTr);
+                $listTplTr = preg_replace('/{\$id}/', $i, $listTplTr);
                 $listTplTr = preg_replace('/{\$stepContents}/', $row_work["workContents"], $listTplTr);
                 $listTplTr = preg_replace('/{\$number}/',$row_work["number"], $listTplTr);
                 $listTplTr = preg_replace('/{\$unitprice}/', $row_work["unitPrice"], $listTplTr);
