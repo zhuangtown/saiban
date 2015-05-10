@@ -92,7 +92,7 @@ if(!isset($_SESSION["user_id"])){
                     </TD>
                 </TR>
             <TR>
-                    <TH class="l-cellsec">”NŒŽ</TH>
+                    <TH class="l-cellsec">”N</TH>
                     <TD class="l-cellodd"><select name="oneYear">
                     <?php 
                     $Count = 0;
@@ -108,7 +108,7 @@ if(!isset($_SESSION["user_id"])){
                     }
                     ?>
                     
-                    </select>    
+                    </select> 
 						<select name="oneMonth">
 							<option value="">--</option>
 							<option value="01">1ŒŽ</option>
@@ -154,9 +154,7 @@ if(!isset($_SESSION["user_id"])){
             </table>
       </form>
       
- <?php 
-//ŒŸ¸ðŒ@sql
- if(isset($_POST['searchOk'])){
+ <?php  if(isset($_POST['searchOk'])){
  $sql_order="SELECT saibanRes,buildDate,updatetime,user FROM `order` WHERE left(saibanRes,1)='I' AND DATE_FORMAT(buildDate,\"%Y";
  if($_POST['oneMonth']){
 $sql_order .="%m\")='".$_POST['oneYear'].$_POST['oneMonth']."'";
@@ -194,7 +192,7 @@ $sql_order .="\")='".$_POST['oneYear']."'";
 		
 		?>
 		<?php 
-				$codeName=substr($row_order[0],1,3);
+				$codeName=substr($row_order[0],8,3);
 		         $sql_name = "SELECT `name` FROM `customer` WHERE `code`=".$codeName."";
                  $res_name = mysql_query($sql_name, $db) or die("DB putout name error");
 				 $row_name=mysql_fetch_array($res_name)

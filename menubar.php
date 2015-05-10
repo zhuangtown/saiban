@@ -39,8 +39,8 @@
                 <a href="#">ÏŒv•ªÍ<span class="arrow"></span></a>
                 
                 <ul>
-                    <li><a href="demo.php">Œ©Ï‘ˆê——</a></li>
-                    <li><a href="ordercheck.php">’•¶‘ˆê——</a></li>
+                    <li><a href="quotationcheck.php">Œ©Ï‘ˆê——</a></li>
+                    <li><a href="ordercost.php">’•¶‘ˆê——</a></li>
                     <li><a href="accountcost.php">¿‹‘ˆê——</a></li>
 					<li><a href="immature.php">’•¶Žó‘ˆê——</a></li>
                 </ul>
@@ -49,7 +49,8 @@
                 <a href="#">’ •[ˆê——<span class="arrow"></span></a>
                 
                 <ul>
-                    <li><a href="accountcheck.php">’•¶‘ˆê——</a></li>
+                    <li><a href="accountcheck.php">¿‹‘ˆê——</a></li>
+                    <li><a href="ordercheck.php">’•¶‘ˆê——</a></li>
                 </ul>
             </li>
 			<li>
