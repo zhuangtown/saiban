@@ -1,6 +1,0 @@
-@charset "utf-8"; 
-/* CSS Document */ 
-body{ font-size:12px; background:#EEE; text-align:center;} 
-table{ width:600px; border:1px solid #050; border-collapse:collapse;} 
-th,td{ border:1px solid #050; width:120px;} 
-th{ background:#282; color:white;} 
