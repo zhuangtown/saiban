@@ -18,3 +18,5 @@ composer create-project --prefer-dist -s dev cakephp/app cake
 cd c:\xampp\htdocs\cake
 composer dumpautoload
 
+session-viewlist
+http://qiita.com/kazu56/items/a54596e963d9e2b71f2e
