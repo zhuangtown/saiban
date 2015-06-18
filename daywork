@@ -23,3 +23,26 @@
 
 以上です。
 宜しくお願いいたします。
+Page Contents
+http://book.cakephp.org/3.0/en/controllers/components/pagination.html
+data ?
+http://book.cakephp.org/3.0/en/orm/retrieving-data-and-resultsets.html#Cake\ORM\Table::find
+pager template
+http://book.cakephp.org/3.0/en/views/helpers/paginator.html#Cake\View\Helper\PaginatorHelper
+eg;
+http://stackoverflow.com/questions/28951705/why-is-cakephp-3-paginator-not-sending-options-to-custom-finder-method
+http://qiita.com/satthi/items/af24c10d083e21f49906
+
+load,controllar
+http://book.cakephp.org/3.0/en/controllers.html#redirecting-to-other-pages
+
+eg;login?
+https://sirius.e-peanuts.org/cakephp3-quick2/
+table,object
+http://book.cakephp.org/3.0/en/orm/table-objects.html
+
+php kanshu
+http://torhamzedd.halteria.com/2010/01/phpcompactextract.html
+set
+http://ivystar.jp/programming/php/cakephp-php-programming/cakephp%E3%81%A7set%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%AE%E5%BC%95%E6%95%B0%E3%81%ABcompact%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95/
+
